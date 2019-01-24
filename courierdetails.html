@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> courierdetails </title>
+</head>
+<body>
+<h1> Courier Details </h1>
+<form action="courier.php" method="POST" target="homepage">
+<fieldset>
+<legend> <font color="#3090C7">Courier Information</font> </legend>
+<font size="5">Courier Type </font> <font color="red">*</font> <br>
+<select name="type" style="height: 25px; width: 50%">
+	<option value="Standard Courier"> Standard Courier </option>
+	<option value="Overnight Courier"> Overnight Courier </option>
+	<option value="Same Day Express Courier"> Same Day Express Courier </option>
+	<option value="International Courier"> International Courier </option>
+	<option value="Pallet Courier"> Pallet Courier </option>
+</select>
+ <br> 
+Enter Courier Type<br> <br>
+<font size="5">Courier Weight(in Kg) </font> <font color="red">*</font> <br>
+<input type="text" name="weight" style="height: 25px; width: 50%;" required> <br> 
+Enter Courier Weight <br> <br>
+<input type="submit" value="Submit" style="background-color: #3090C7; color: white; height: 35px;  padding: 5px 10px 5px 10px; border: none; font-size: 20px;">
+</fieldset> 
+</form>
+</body>
+</html>

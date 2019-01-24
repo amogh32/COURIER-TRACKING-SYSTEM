@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myProgress{
+	width:	25%;
+	background-color:	#ddd;
+}
+#myBar{
+	width:	0%;
+	height: 30px;
+	background-color:	#4CAF50; 
+}
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+</style>
+<title> register </title>
+<script src="register.js"> </script>
+</head>
+<body>
+<form name="myForm" onsubmit="return ValidateForm()" action="register.php" method="POST">
+<fieldset>
+<legend> <h1>User Account</h1> </legend>
+<font size="5">Username</font> <font color="red">*</font> <br>
+<input type="text" id="username" name = "username" style="height: 25px; width: 50%;" required> <br>
+Max 15 Characters. Spaces are not allowed. 
+<br> <br>
+<font size="5">E-mail address </font> <font color="red">*</font> <br>
+<input type="email" id="email" name = "email" style="height: 25px; width: 50%;" required> <br>
+All Emails from the system will be sent ot this address. The Email is not made public and<br>will only be used if you wish to receive certain news or notifications by Email. 
+<br> <br>
+<font size="5">Password</font> <font color="red">*</font> <br>
+<input type="password" id="password" name="password" onkeydown="scorePassword()" style="height: 25px; width: 50%;" required> <br> 
+Min 7 characters. Spaces are not allowed. <br> <br>
+<div id="myProgress">
+	<div id="myBar"> </div>
+</div>
+<p id="p"> </p> <br> <br>
+<table>
+<tr>
+<td>
+To make your password stronger <br>
+* Add Uppercase characters.	<br>
+* Add Numbers. <br>
+* Add Special Symbols like !,@,$,%,etc.
+</td>
+</tr>
+</table> <br>
+<font size="5">Confirm Password </font> <font color="red">*</font> <br>
+<input type="password" id="confirmpassword" style="height: 25px; width: 50%;" required> <br> <br>
+<font size="5">Name </font> <font color="red">*</font> <br>
+<input type="text" id="name" name="name" style="height: 25px; width: 50%;" required> <br> 
+Enter your Full Name <br> <br>
+<font size="5"> Date Of Birth </font> <font color="red">*</font>
+<input type="date" id="bday" name="bday" style="margin-left: 50px;" required>
+<br>
+<br>
+<font size="5"> Gender </font> <font color="red">*</font> <span style="display:inline-block; width: 100px;"></span> Male <input type="radio" name="gender" id="gender0" name="gender0" value="male"> Female <input type="radio" name="gender" id="gender1" value="female" checked> </pre>
+<br>
+<br>
+<font size="5">Contact Number </font> <font color="red">*</font> <br>
+<input type="tel" id="number" name="number" style="height: 25px; width: 50%;" required> <br> 
+Enter your Mobile Number <br> <br>
+<font size="5">Alternate Contact Number</font> <br>
+<input type="tel" id="altnumber" name="altnumber" style="height: 25px; width: 50%;"> <br> 
+Enter Alternate Mobile Number <br> <br>
+<font size="5">Country </font> <font color="red">*</font> <br>
+<input type="text" id="country" value="India" name="country" style="height: 25px; width: 50%;" required> <br> 
+Enter your country<br> <br>
+<font size="5">Address</font> <font color="red">*</font> <br>
+<textarea rows="5" cols="30" style="width: 50%;" id="address" name="address" required> </textarea> <br>
+Enter a valid address <br> <br>
+<input type="checkbox" id="t&c" name="t&c"> By clicking on this you agree with the <a href="t&c.html" target="_blank"><u>Terms And Conditions</u></a> of this courier management system. <br> <br>
+<input type="submit" value="Submit" style="background-color: #3090C7; color: white; height: 35px;  padding: 5px 10px 5px 10px; border: none; font-size: 20px;">
+</fieldset>	
+</form>
+</body>
+</html>

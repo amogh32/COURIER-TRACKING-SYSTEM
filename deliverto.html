@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> deliverto </title>
+<script src="pickup.js"> </script>
+</head>
+<body>
+<h1> Create Pickup Request </h1>
+<form onsubmit="return ValidateForm()" action="receiver.php" method="POST" target="homepage">
+<fieldset>
+<legend> <font color="#3090C7">Deliver To</font> </legend>
+<font size="5">Name</font> <font color="red">*</font> <br>
+<input type="text" name="name" style="height: 25px; width: 50%;" required> <br>
+Enter Receiver's Name
+<br> <br>
+<font size="5">Mobile Number </font> <font color="red">*</font> <br>
+<input type="tel" id="number" name="number" style="height: 25px; width: 50%;" required> <br> 
+Enter Receiver's Mobile Number <br> <br>
+<font size="5"> Alternate Mobile Number </font> <font color="red">*</font> <br>
+<input type="tel" id="altnumber" name="altnumber" style="height: 25px; width: 50%;" required> <br> 
+Enter an Alternate Mobile Number <br> <br>
+<font size="5">E-mail address </font> <font color="red">*</font> <br>
+<input type="email" name="email" style="height: 25px; width: 50%;" required> <br>
+Enter Receiver's E-mail Address 
+<br> <br>
+<font size="5">Address</font> <font color="red">*</font> <br>
+<textarea rows="5" cols="30" style="width: 50%;" name="address" required> </textarea> <br>
+Enter a valid Address <br> <br>
+<font size="5">City </font> <font color="red">*</font> <br>
+<input type="text" name="city" style="height: 25px; width: 50%;" required> <br> 
+Enter City<br> <br>
+<font size="5">State </font> <font color="red">*</font> <br>
+<input type="text" name="state" style="height: 25px; width: 50%;" required> <br> 
+Enter State<br> <br>
+<font size="5">Country </font> <font color="red">*</font> <br>
+<input type="text" name="country" value="India" style="height: 25px; width: 50%;" required> <br> 
+Enter Country<br> <br>
+<font size="5">Pin Code </font> <font color="red">*</font> <br>
+<input type="text" id="pincode" name="pincode" style="height: 25px; width: 50%;" required> <br> 
+Enter Pin Code <br> <br>
+<input type="submit" value="Submit" style="background-color: #3090C7; color: white; height: 35px;  padding: 5px 10px 5px 10px; border: none; font-size: 20px;">
+</fieldset> 
+</form>
+</body>
+</html>
